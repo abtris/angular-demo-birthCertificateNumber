@@ -4,21 +4,19 @@
         <div class="control-group">
             <label class="control-label">Birth Certicate Number:</label>
             <div class="controls">
-                <input type="text" name="birthnumber" ng-model="birthnumber"
-                       ngx-birth-certificate-number birth="birth" kind="kind"
-                />
+                <input type="text" ng-model="birthnumber" ng-change="change()" />
             </div>
         </div>
         <div class="control-group">
             <label class="control-label">Birth:</label>
             <div class="controls">
-                <input type="text" name="birth" ng-model="birth"  />
+                <input type="text" ng-model="birth"  />
             </div>
         </div>
         <div class="control-group">
             <label class="control-label">Kind:</label>
             <div class="controls">
-                <input type="text" name="kind" ng-model="kind" />
+                <input type="text" ng-model="kind"  />
             </div>
         </div>
     </form>
