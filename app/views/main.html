@@ -1,9 +1,25 @@
-<div class="hero-unit">
-  <h1>Cheerio!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<fieldset>
+    <legend>Example</legend>
+    <form name="form_fav" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label">Birth Certicate Number:</label>
+            <div class="controls">
+                <input type="text" name="birthnumber" ng-model="birthnumber"
+                       ngx-birth-certificate-number birth="birth" kind="kind"
+                />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Birth:</label>
+            <div class="controls">
+                <input type="text" name="birth" ng-model="birth"  />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">Kind:</label>
+            <div class="controls">
+                <input type="text" name="kind" ng-model="kind" />
+            </div>
+        </div>
+    </form>
+</fieldset>
